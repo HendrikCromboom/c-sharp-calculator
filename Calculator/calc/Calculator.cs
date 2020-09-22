@@ -2,9 +2,9 @@ using System;
 
 namespace Calculator.calc
 {
-    public static class Calculator
+    public class Calc
     {
-         public static int Calculate(string opp, int num1, int num2)
+         public  int Calculate(string opp, int num1, int num2)
         { 
             var result = 0;
             switch (opp)

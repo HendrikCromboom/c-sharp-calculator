@@ -3,9 +3,9 @@ using Calculator.calc;
 
 namespace Calculator
 {
-    internal static class Program
+      class Program
     {
-        private static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("What kind of calculation do you want to do? +,-,*,/");
             var outputOne = Console.ReadLine();
@@ -16,7 +16,8 @@ namespace Calculator
             Console.WriteLine("What is the second number?");
             var outputThree = Console.ReadLine();
             var numberTwo = int.Parse(outputThree);
-            var output = calc.Calculator.Calculate(opp, numberOne, numberTwo);
+            var calculator = new Calc();
+            var output = calculator.Calculate(opp, numberOne, numberTwo);
             Console.WriteLine("The result is "+ output);
 
         }
